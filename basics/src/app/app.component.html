@@ -1,5 +1,5 @@
 <p>Hello {{name.toUpperCase()}}</p>
 
 <input (keyup)="changeImage($event)" [value]="imgURL">
-<!--New imgURL value-->
-<img [src]="imgURL" alt="">
+
+<app-post [postImg]="imgURL"></app-post>
