@@ -7,10 +7,10 @@ import {Component} from "@angular/core";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = 'Karim';
+  name = 'Simba';
   imgURL = 'https://picsum.photos/id/237/500/500';
 
-  getName() {
-    return this.name;
+  changeImage(e:KeyboardEvent) {
+    this.imgURL = e.target.value; // Property 'value' does not exist on 'EventTarget' ??
   }
 }
