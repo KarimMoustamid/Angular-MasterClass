@@ -11,6 +11,6 @@ export class AppComponent {
   imgURL = 'https://picsum.photos/id/237/500/500';
 
   changeImage(e:KeyboardEvent) {
-    this.imgURL = e.target.value; // Property 'value' does not exist on 'EventTarget' ??
+    this.imgURL = (e.target as HTMLInputElement).value;
   }
 }
